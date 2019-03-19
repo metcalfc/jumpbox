@@ -28,16 +28,13 @@ resource "digitalocean_firewall" "default" {
 
   inbound_rule = [
     {
-      protocol         = "udp"
-      port_range       = "60001"
-      source_addresses = ["0.0.0.0/0", "::/0"]
-    },
-    {
+      # OpenVPN
       protocol         = "udp"
       port_range       = "1194"
       source_addresses = ["0.0.0.0/0", "::/0"]
     },
     {
+      # SSH
       protocol         = "tcp"
       port_range       = "22"
       source_addresses = ["0.0.0.0/0", "::/0"]
