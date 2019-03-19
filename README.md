@@ -58,3 +58,11 @@ Running Ansible to finish setting up the servers:
 $ ansible-galaxy install -r requirements.yml
 $ ansible-playbook -i inventory ansible.yml
 ```
+
+## Step 3 - VPN and Workstation?
+
+I use Docker for everything else once this box is up and running.
+
+For VPN I use: https://github.com/kylemanna/docker-openvpn
+
+For getting work done I use a combination of my laptop and a flow similar to what Fatih Arslan describes here: https://arslan.io/2019/01/07/using-the-ipad-pro-as-my-development-machine/ just minus the iPad (currently). For a different take on what I'm trying to accomplish check out his repo: https://github.com/fatih/dotfiles/tree/master/workstation.
